@@ -1,0 +1,1346 @@
+@font-face {
+  font-family: 'Montserrat';  /* Замените 'Название_шрифта' на желаемое имя шрифта */
+  src: url('C:\Users\1\Desktop\вебприложение\Montserrat-Thin.ttf') format('truetype');  /* Замените 'путь_к_шрифту.ttf' на путь к файлу TTF */
+}
+
+
+@font-face {
+  font-family: 'Montserrat-Thin';  /* Замените 'Название_шрифта' на желаемое имя шрифта */
+  src: url('C:\Users\1\Desktop\вебприложение\Inter-VariableFont_slnt,wght.ttf') format('truetype');  /* Замените 'путь_к_шрифту.ttf' на путь к файлу TTF */
+}
+
+
+.button1 {
+  padding: 10px 20px;
+  position: absolute;
+  background-color: #FFF1D4;
+  top:35vh;
+  left:70vw;
+  width:10vw;
+  height:10vh;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.button2 {
+  padding: 10px 20px;
+  position: absolute;
+  background-color:  #CEF0BE;
+  top:35vh;
+  left:82vw;
+  width:10vw;
+  height:10vh;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button3 {
+  padding: 10px 20px;
+  position: absolute;
+  background-color:#8FA890;
+  top:47vh;
+  left:70vw;
+  width:10vw;
+  height:10vh;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button4 {
+  padding: 10px 20px;
+  position: absolute;
+  background-color: #DBC9B4;
+  top:47vh;
+  left:82vw;
+  width:10vw;
+  height:10vh;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-content {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Montserrat';
+  }
+  
+  
+  /* Боковая зеленая панель */
+  
+  .sidebar {
+    position: fixed;
+    width: 19vw;
+    height: 100vh;
+    left: 0%;
+    top: 0%;
+    bottom:0%;
+    background: #78A563;
+  }
+
+  
+/* Выйти */
+.btn-exit {
+  position: absolute;
+  left: 7.03%;
+  right: 7.03%;
+  top: 84%;
+  bottom: 12%;
+  background: #E2A760;
+  border-radius: 15px;
+}
+
+/* Настройки кнопка */
+.btn-settings {
+  position: absolute;
+  left: 7.03%;
+  right: 7.03%;
+  top: 74.73%;
+  bottom: 20.86%;
+  background: #07540A;
+  border-radius: 15px;
+}
+
+/* Заметки кнопка */
+.btn-notes {
+  position: absolute;
+  left: 7.03%;
+  right: 7.03%;
+  top: 65.05%;
+  bottom: 30.54%;
+  background: #07540A;
+  border-radius: 15px;
+}
+
+/* Матрица кнопка */
+.btn-matrix {
+  position: absolute;
+  left: 7.03%;
+  right: 7.03%;
+  top: 55.38%;
+  bottom: 40.22%;
+  background: #07540A;
+  border-radius: 15px;
+}
+
+/* План недели кнопка */
+.btn-week-plan {
+  position: absolute;
+  left: 7.81%;
+  right: 6.25%;
+  top: 45.81%;
+  bottom: 49.78%;
+  background: #07540A;
+  border-radius: 15px;
+}
+
+/* Входящие кнопка */
+.btn-inbox {
+  position: absolute;
+  left: 7.81%;
+  right: 6.25%;
+  top: 36.13%;
+  bottom: 59.46%;
+  background: #07540A;
+  border-radius: 15px;
+}
+
+/* Выйти */
+.btn-exit-text {
+  position: absolute;
+  left: 35%;
+  right: 38.67%;
+  top: 20%;
+  bottom: 9.89%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5vw;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Настройки */
+.btn-settings-text {
+  position: absolute;
+  left: 28%;
+  right: 31.25%;
+  top: 10%;
+  bottom: 25%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5vw;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.btn-settings-text-pressed {
+  position: absolute;
+  left: 28%;
+  right: 31.25%;
+  top: 33%;
+  bottom: 25%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5vw;
+  line-height: 20px;
+  text-align: center;
+  color: #07540A;
+}
+.button-pressed {
+  background-color: #CFC0AD; /* Измените цвет фона на нужный вам */
+}
+
+
+
+
+/* Заметки */
+.notes {
+    position: absolute;
+    left: 32%;
+    right: 35%;
+    top: 42%;
+    bottom: 10%;
+    font-family: 'Montserrat-Thin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 10%;
+    text-align: center;
+    color: #f9f6f6;
+  }
+  
+  .note-pressed {
+    position: absolute;
+    left: 33%;
+    right: 35%;
+    top: 40%;
+    bottom: 10%;
+    font-family: 'Montserrat-Thin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 10%;
+    text-align: center;
+    color: #07540A;
+
+  }
+  /* Матрица */
+  .matrix {
+    position: absolute;
+    left: 32%;
+    right: 35%;
+    top: 40%;
+    bottom: 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 10%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+
+  .matrix-pressed {
+    position: absolute;
+    left: 32%;
+    right: 35%;
+    top: 40%;
+    bottom: 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 10%;
+    text-align: center;
+    color: #07540A;
+  }
+  
+  /* План недели */
+  .week-plan {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 40%;
+    bottom: 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 10%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .week-plan-pressed {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 40%;
+    bottom: 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 10%;
+    text-align: center;
+    color: #07540A;
+  }
+  
+  /* Входящие */
+  .inbox {
+    position: absolute;
+    left: 30%;
+    right: 35%;
+    top: 40%;
+    bottom: 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 10%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+
+  .inbox-pressed {
+    position: absolute;
+    left: 30%;
+    right: 35%;
+    top: 40%;
+    bottom: 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 10%;
+    text-align: center;
+    color: #07540A;
+  }
+
+
+
+  /* WCID */
+  .wcid1 {
+    position: absolute;
+    left: 12.89%;
+    right: 12.89%;
+    top: 26.45%;
+    bottom: 65.81%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5vw;
+    line-height: 61px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  /* Верхушка */
+  .top {
+    position: absolute;
+    width: 98.5vw;
+    height: 200px;
+    left: 0px;
+    top: 0px;
+    background: url(IMG_4286_1.png);
+  }
+
+  
+  /* Твой трекер задач */
+  .task-tracker {
+    position: absolute;
+    left: 36.39%;
+    right: 36.43%;
+    top: 20vh;
+    bottom: 14.77%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .btn-new {
+    position: absolute;
+    width: 30vw;
+    height:5vh;
+    left: 42vw;
+    top: 40vh;
+    bottom: 40.22%;
+    background: #78A563;
+    border-radius: 15px;
+  }
+  .zametki {
+    position: absolute;
+    left: 47vw;
+
+    top: 30vh;
+    bottom: 14.77%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+  }
+  .new {
+    position: absolute;
+    left: 7vw;
+    top:0.25vw;
+    bottom: 1vw;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  .btn-newza {
+    position: absolute;
+    width: 15vw;
+    height:5vh;
+    left: 35vw;
+    top: 37vh;
+    bottom: 40.22%;
+    background: #CEF0BE;
+    border-radius: 15px;
+  }
+  .zadachi {
+    position: absolute;
+    left: 35vw;
+
+    top: 30vh;
+    bottom: 14.77%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+  }
+  .newza {
+    position: absolute;
+    left: 4vw;
+    top:0.25vw;
+    bottom: 1vw;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 25px;
+    color: #000000;
+  }
+
+
+  .note {
+    margin-bottom: 10px;
+    padding: 10px;    /* поле*/
+    cursor: pointer;
+    border-bottom: 2px solid rgb(3, 3, 3);
+    
+  }
+  .note-text {
+    margin-top: 5px;
+    color:#07540A;
+  }
+
+  /* Стили модального окна */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 35vw;
+    top: 10vw;
+    width: 25vw;
+    height: 90vh;
+    overflow: auto;
+    padding: 20vh;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20vw;
+    height: 50vh;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  /* WCID */
+  .wcid {
+    position: absolute;
+    left: 25.9%;
+    right: 25.93%;
+    top: 2%;
+    bottom: 26.01%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10vw;
+    line-height: 157px;
+    text-align: center;
+    color: #FFFFFF;
+  } 
+
+  .horizontal-field1 {
+    width: 90%;
+    height: 1/10;
+    margin-left:7%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    font-size: 30px;
+  }
+
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 12.5%; /* Высота поля для каждого элемента (1/8 от высоты прямоугольника) */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    width: 5%; /* Ширина галочки (1/8 от ширины прямоугольника) */
+    height: 70%;
+}
+
+.checkbox-container input[type="text"] {
+    width: 85%; /* Ширина поля ввода (7/8 от ширины прямоугольника) */
+    height: 60%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    font-size: 15px;
+}
+
+
+  /* Rectangle 2 */
+  .rectangle-m {
+    position: absolute;
+    width: 30vw;
+    height: 45vh;
+    left: 28vw;
+    top: 33%;
+    background: white;
+    border: 2px solid #07540A;
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+  }
+  
+  /* Rectangle 4 */
+  .rectangle-t {
+    position: absolute;
+    width: 30vw;
+    height: 45vh;
+    left: 28vw;
+    top: 83%;
+    background: white;
+    border: 2px solid #07540A;
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+  }
+  
+  /* Rectangle 5 */
+  .rectangle-th {
+    position: absolute;
+    width: 30vw;
+    height: 45vh;
+    left: 60vw;
+    top: 83%;
+    background: white;
+    border: 2px solid #07540A;
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+  }
+  
+  /* Rectangle 3 */
+  .rectangle-f {
+    position: absolute;
+    width: 30vw;
+    height: 45vh;
+    left: 60vw;
+    top: 33%;
+    background: white;
+    border: 2px solid #07540A;
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+  }
+  
+    /* Rectangle 2 */
+    .rectangle-w {
+      position: absolute;
+      width: 30vw;
+      height: 45vh;
+      left: 28vw;
+      top: 133%;
+      background: white;
+      border: 2px solid #07540A;
+      list-style-type: none;
+      padding: 0;
+      overflow: auto;
+    }
+    
+    /* Rectangle 4 */
+    .rectangle-sat {
+      position: absolute;
+      width: 30vw;
+      height: 20vh;
+      left: 60vw;
+      top: 133%;
+      background: white;
+      border: 2px solid #07540A;
+      list-style-type: none;
+      padding: 0;
+      overflow: auto;
+    }
+    
+    /* Rectangle 5 */
+    .rectangle-sun {
+      position: absolute;
+      width: 30vw;
+      height: 20vh;
+      left: 60vw;
+      top: 158%;
+      background: white;
+      border: 2px solid #07540A;
+      list-style-type: none;
+      padding: 0;
+      overflow: auto;
+    }
+    
+    .pole1 {
+      position: center;
+      left: 5vw;
+      width: 20vw; /* Ширина прямоугольника в процентах */
+      height: 4vh; /* Высота прямоугольника в viewport units */
+      background: #f9f7f4;
+      margin: 1vh auto; /* Отступы сверху и снизу, автоматическое выравнивание по горизонтали */
+    }
+    .pole2 {
+      position: center;
+      left: 5vw;
+      width: 20vw; /* Ширина прямоугольника в процентах */
+      height: 35vh; /* Высота прямоугольника в viewport units */
+      background: #f5f3f1;
+      margin: 2vh auto; /* Отступы сверху и снизу, автоматическое выравнивание по горизонтали */
+    }
+    .gottext {
+      position: right;
+      left: 5vw;
+      width: 20vw; /* Ширина прямоугольника в процентах */
+      height: 35vh; /* Высота прямоугольника в viewport units */
+      color: #f5f3f1;
+      width: 1vw;
+    }
+
+
+    .got {
+      position: absolute;
+      left: 22vw;
+      width: 8vw; /* Ширина прямоугольника в процентах */
+      height: 4vh; /* Высота прямоугольника в viewport units */
+      background: #43403c;
+      border-radius: 15px;
+      
+    }
+
+    .triangle-button {
+      width: 0;
+      height: 0;
+      margin-left:30vw;
+      margin-top:20vh;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-right: 30px solid #d0c6c6;
+      cursor: pointer;
+      transform: rotate(0deg);
+    }
+
+    .triangle-button:hover {
+      border-right-color: #ffffff;
+    }
+
+    .new-rectangle {
+      position: absolute;
+      left: 24vw;
+      width: 70vw; /* Ширина прямоугольника в процентах */
+      height: 150vh; /* Высота прямоугольника в viewport units */
+      background: #FFF1D4;
+      margin: 29vh auto; /* Отступы сверху и снизу, автоматическое выравнивание по горизонтали */
+    }
+    .new-rectangle1 {
+      position: absolute;
+      top: 35%;
+      left: 24.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #E2A760;
+      border-radius: 18px 18px 0 0;
+    }
+
+    .ptext {
+      position: absolute;
+      left: 27%;
+      right: 31.25%;
+      top: 33%;
+      bottom: 25%;
+      font-family: 'Montserrat';
+      font-style: normal;
+ 
+      font-size: 1.5vw;
+      line-height: 20px;
+      text-align: center;
+      color: black;
+    }
+
+    .texti {
+      
+      font-family: 'Montserrat';
+      font-style: italic bold;
+      margin-left: 9vw;
+      font-size: 1.5vw;
+      line-height: 20px;
+   
+      color: black;
+    }
+    
+    .texti3 {
+      font-family: 'Montserrat';
+      font-style: italic bold;
+      margin-left: 11vw;
+      font-size: 1.5vw;
+      line-height: 20px;
+   
+      color: black;
+    }
+
+    .texti2 {
+     
+    
+      font-family: 'Montserrat';
+      font-style: italic bold;
+      margin-left: 8vw;
+      font-size: 1.5vw;
+      line-height: 20px;
+   
+      color: black;
+    }
+
+
+
+    .new-rectangle2 {
+      position: absolute;
+      top: 85%;
+      left: 24.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #E2A760;
+      border-radius: 18px 18px 0 0;
+    }
+
+
+    .new-rectangle3 {
+      position: absolute;
+      top: 135%;
+      left: 24.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #E2A760;
+      border-radius: 18px 18px 0 0;
+    }
+
+
+    .new-rectangle4 {
+      position: absolute;
+      top: 35%;
+      left: 90.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #E2A760;
+      border-radius: 18px 18px 0 0;
+    }
+
+    .new-rectangle5 {
+      position: absolute;
+      top: 85%;
+      left: 90.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #E2A760;
+      border-radius: 18px 18px 0 0;
+    }
+
+    .new-rectangle6 {
+      position: absolute;
+      top: 135%;
+      left: 90.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #E2A760;
+      border-radius: 18px 18px 0 0;
+    }
+    .new-rectangle7 {
+      position: absolute;
+      top: 160%;
+      left: 90.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #E2A760;
+      border-radius: 18px 18px 0 0;
+    }
+
+    .new-rectangle-1 {
+      position: absolute;
+      top: 42%;
+      left: 24.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #c4ab93;
+      border-radius: 0 0 18px 18px;
+    }
+    .new-rectangle-2 {
+      position: absolute;
+      top: 92%;
+      left: 24.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #c4ab93;
+      border-radius: 0 0 18px 18px;
+    }
+    .new-rectangle-3 {
+      position: absolute;
+      top: 142%;
+      left: 24.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #c4ab93;
+      border-radius: 0 0 18px 18px;
+    }
+    .new-rectangle-4 {
+      position: absolute;
+      top: 42%;
+      left: 90.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #c4ab93;
+      border-radius: 0 0 18px 18px;
+    }
+    .new-rectangle-5 {
+      position: absolute;
+      top: 92%;
+      left: 90.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #c4ab93;
+      border-radius: 0 0 18px 18px;
+    }
+    .new-rectangle-6 {
+      position: absolute;
+      top: 142%;
+      left: 90.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #c4ab93;
+      border-radius: 0 0 18px 18px;
+    }
+    .new-rectangle-7 {
+      position: absolute;
+      top: 167%;
+      left: 90.5vw;
+      width: 3vw; /* Ширина прямоугольника в процентах */
+      height: 7vh; /* Высота прямоугольника в viewport units */
+      background: #c4ab93;
+      border-radius: 0 0 18px 18px;
+    }
+
+
+
+
+      /* настройки*/
+  .tema-1 {
+    position: absolute;
+    width: 15vw;
+    height: 43vh;
+    left: 26vw;
+    top: 42%;
+    background: white;
+    border: 2px solid #07540A;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 15vw;
+    height: 35vh;
+    object-fit: cover;
+}
+
+
+.tema-2 {
+  position: absolute;
+  width: 15vw;
+  height: 43vh;
+  left: 51vw;
+  top: 42%;
+  background: white;
+  border: 2px solid #07540A;
+}
+
+.tema-3 {
+  position: absolute;
+  width: 15vw;
+  height: 43vh;
+  left: 77vw;
+  top: 42%;
+  background: white;
+  border: 2px solid #07540A;
+}
+
+
+.top1 {
+  position: absolute;
+  width: 66.5vw;
+  height: 7vh;
+  left: 25vw;
+  top: 30vh;
+  background: #897F73;
+}
+
+.footer {
+  position: absolute;
+  width: 66.5vw;
+  height: 7vh;
+  left: 25vw;
+  top: 90vh;
+  background: #897F73;
+}
+
+
+.nas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0%;
+  bottom: 0%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 10vw;
+  font-size: 3vw;
+  line-height: 7vh;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.btn-tap {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 84%;
+  bottom: 5%;
+  background: #1f211f;
+  border-radius: 15px;
+}
+
+
+.btn-tap-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0%;
+  bottom: 0%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 10vw;
+  font-size: 1vw;
+  line-height: 4vh;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 33vw;
+  height: 30vh;
+  left: 22.5vw;
+  top: 32%;
+  background: #FFF1D4;
+  overflow: auto;
+}
+.todo-list2 {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 33vw;
+  height: 30vh;
+  left: 57vw;
+  top: 32%;
+  background: #CEF0BE;
+  overflow: auto;
+}
+.todo-list3 {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 33vw;
+  height: 30vh;
+  left: 22.5vw;
+  top: 65%;
+  background: #8FA890;
+  overflow: auto;
+}
+.todo-list4 {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 33vw;
+  height: 30vh;
+  left: 57vw;
+  top: 65%;
+  background: #DBC9B4;
+  overflow: auto;
+}
+
+
+
+.todo-list5 {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 33vw;
+  height: 30vh;
+  left: 22.5vw;
+  top: 33%;
+  background: #FFF1D4;
+  overflow: auto;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-checkbox {
+  
+  margin-left: 10px;
+  transform: scale(1.5);
+  padding: 2px;
+}
+
+.todo-input {
+  margin-right: 10px;
+  width: 90%;
+  height: 10%;
+
+  border: none;
+  border-bottom: 2px solid #000;
+  background: transparent;
+  font-size: 1.5vw;
+}
+.rectangle {
+  position: absolute;
+  left: 27vw;
+  top: 20vh;
+  width: 65vw; /* Ширина прямоугольника в процентах */
+  height: 90vh; /* Высота прямоугольника в viewport units */
+  background: #CEF0BE;
+  margin: 29vh auto; /* Отступы сверху и снизу, автоматическое выравнивание по горизонтали */
+  border: 2px solid #07540A;
+}
+
+.rectangle1 {
+  position: absolute;
+  left: 3vw;
+  top: 5vh;
+  width: 59vw; /* Ширина прямоугольника в процентах */
+  height: 79vh; /* Высота прямоугольника в viewport units */
+
+ 
+}
+
+
+
+.rectangle2 {
+  position: absolute;
+  left: 25vw;
+  top: 45vh;
+  width: 35vw; /* Ширина прямоугольника в процентах */
+  height: 65vh; /* Высота прямоугольника в viewport units */
+  background:  #F0EFEF;
+  border: 2px solid #000000;
+}
+
+
+.rpole {
+  position: absolute;
+  left: 65vw;
+  top: 58vh;
+  width: 30vw; /* Ширина прямоугольника в процентах */
+  height: 52vh; /* Высота прямоугольника в viewport units */
+  background:  #F0EFEF;
+  border: 2px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Тема 2 */
+
+
+.theme2 .main-conten {
+  background: #FFFFFF;
+}
+
+.theme2 .sidebar {
+  background:  #F3A7A2;
+}
+
+.theme2 .btn-exit {
+  background:  #D9D9D9;
+}
+
+.theme2 .btn-settings,
+.theme2 .btn-notes,
+.theme2 .btn-matrix,
+.theme2 .btn-week-plan,
+.theme2 .btn-inbox {
+  background: #FB3689;
+}
+
+.theme2 .rectangle-m,
+.theme2 .rectangle-t,
+.theme2 .rectangle-th,
+.theme2 .rectangle-f,
+.theme2 .rectangle-w,
+.theme2 .rectangle-sat,
+.theme2 .rectangle-sun {
+  background: white;
+  border: 2px solid #FB3689;
+}
+
+.theme2 .new-rectangle,
+.theme2 .todo-list{
+  background: #FFF1D4;
+}
+
+.theme2 .new-rectangle1 {
+  background: #D9D9D9;
+}
+
+.theme2 .todo-list2 {
+  background:#FFF1D4;
+}
+
+.theme2 .todo-list3 {
+  background:#F3A7A2;
+}
+
+.theme2 .todo-list4 {
+  background:#DBA9B2;
+}
+
+.theme2  .tema-1,
+.theme2 .tema-2,
+.theme2 .tema-3{
+ 
+    background: white;
+    border: 2px solid  #FB3689;
+  }
+
+.theme2 .top1,
+.theme2 .footer{
+background:#EECAE6;
+}
+
+.theme2 .new-rectangle-1,
+.theme2 .new-rectangle-2,
+.theme2 .new-rectangle-3,
+.theme2 .new-rectangle-4,
+.theme2 .new-rectangle-5,
+.theme2 .new-rectangle-6,
+.theme2 .new-rectangle-7 {
+  background: #c4ab93;
+}
+.theme2 .new-rectangle1,
+.theme2 .new-rectangle2,
+.theme2 .new-rectangle3,
+.theme2 .new-rectangle4,
+.theme2 .new-rectangle5,
+.theme2 .new-rectangle6,
+.theme2 .new-rectangle7 {
+  background: #D27D8C;
+}
+
+.theme2 .new-rectangle {
+  background: #FFF1D4;
+}
+
+
+.theme2 .btn-settings-text-pressed {
+
+  color: #FFFFFF;
+}
+
+
+.theme2 .button-pressed {
+  background-color: #DBA9B2; /* Измените цвет фона на нужный вам */
+}
+/* Тема 3 */
+
+
+.theme3 .main-conten {
+  background: #FFFFFF;
+}
+
+.theme3 .sidebar {
+  background: #75E8DB;
+}
+
+.theme3 .btn-exit {
+  background:#FFFBA5;
+}
+
+.theme3 .btn-settings,
+.theme3 .btn-notes,
+.theme3 .btn-matrix,
+.theme3 .btn-week-plan,
+.theme3 .btn-inbox {
+  background: #05B3E9;
+}
+
+.theme3 .rectangle-m,
+.theme3 .rectangle-t,
+.theme3 .rectangle-th,
+.theme3 .rectangle-f,
+.theme3 .rectangle-w,
+.theme3 .rectangle-sat,
+.theme3 .rectangle-sun {
+  background: white;
+  border: 2px solid #05B3E9;
+}
+
+.theme3 .new-rectangle,
+.theme3 .todo-list{
+  background: #FFF1D4;
+}
+
+.theme3 .new-rectangle1 {
+  background:  #FFFBA5;
+}
+
+.theme3 .todo-list2 {
+  background: #B2BEE9;
+}
+
+.theme3 .todo-list3 {
+  background:  #BFE8E3;
+}
+
+.theme3 .todo-list4 {
+  background: #ABA39A;
+}
+
+.theme3  .tema-1,
+.theme3 .tema-2,
+.theme3 .tema-3{
+ 
+    background: white;
+    border: 2px solid #05B3E9;
+  }
+
+.theme3 .top1,
+.theme3 .footer{
+background:#897F73;
+}
+
+.theme3 .new-rectangle-1,
+.theme3 .new-rectangle-2,
+.theme3 .new-rectangle-3,
+.theme3 .new-rectangle-4,
+.theme3 .new-rectangle-5,
+.theme3 .new-rectangle-6,
+.theme3 .new-rectangle-7 {
+  background: #c4ab93;
+}
+.theme3 .new-rectangle1,
+.theme3 .new-rectangle2,
+.theme3 .new-rectangle3,
+.theme3 .new-rectangle4,
+.theme3 .new-rectangle5,
+.theme3 .new-rectangle6,
+.theme3 .new-rectangle7 {
+  background: #FFFBA5;
+}
+
+.theme3 .new-rectangle {
+  background: #FFF1D4;
+}
+
+.theme3 .btn-settings-text-pressed {
+
+  color: #FFFFFF;
+}
+
+
+.theme3 .button-pressed {
+  background-color:#ABA39A; /* Измените цвет фона на нужный вам */
+}

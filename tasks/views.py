@@ -8,4 +8,7 @@ def index(request):
     return render(request, 'tasks/vhod.html')
 
 def matrix(request):
-    return HttpResponse("Матрица Эзенхауэра")
+    return render(request, 'tasks/matrica.html')
+
+def list_week(request):
+    return render(request, 'tasks/list_week.html')

@@ -8,10 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
-    <title>WCID - What can I do?</title>
+    <title>WCID - What can i do?</title>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <link rel="stylesheet" type="text/css" href={% static "css/matrica.css" %}>
 </head>
 
@@ -25,8 +23,8 @@
       <button type="submit" id="btn-settings" class="btn-settings">
         <span class="btn-settings-text">Настройки</span>
       </button>
-      <button type="submit" id="btn-notes" class="btn-notes">
-        <span class="notes">Заметки</span>
+      <button type="submit" id="btn-notes" class="btn-notes button-pressed">
+        <span class="note-pressed">Заметки</span>
       </button>
       <button type="submit" id="btn-matrix" class="btn-matrix">
         <span class="matrix">Матрица</span>
@@ -34,8 +32,8 @@
       <button type="submit" id="btn-week-plan" class="btn-week-plan">
         <span class="week-plan">План недели</span>
       </button>
-      <button type="submit" id="btn-inbox" class="btn-inbox button-pressed">
-        <span class="inbox-pressed">Входящие</span>
+      <button type="submit" id="btn-inbox" class="btn-inbox">
+        <span class="inbox">Входящие</span>
       </button>
     </div>
   </div>
@@ -44,9 +42,9 @@
   </div>
   <div class="task-tracker">Твой трекер задач</div>
 
-  <div class="zadachi">Мои задачи</div>
-  <button type="submit" id="btn-newza" class="btn-newza">
-    <span class="newza">Добавить задачу</span>
+  <div class="zametki">Мои заметки</div>
+  <button type="submit" id="btn-new" class="btn-new">
+    <span class="new">Написать новую заметку</span>
   </button>
 
 
@@ -60,15 +58,13 @@
       <div></div><textarea id="noteText"  class = "pole2" placeholder="Текст"></textarea></div>
     </div>
   </div>
-
-  <div class="rectangle2">
-    <div id="notesContainer"></div>
-  </div>
-
+<div class = rectangle>
+  <div class = rectangle1>
+  <div id="notesContainer"></div>
+</div>
+</div>
   <script>
-
-
-const btnNewNote = document.getElementById('btn-newza');
+const btnNewNote = document.getElementById('btn-new');
     const noteForm = document.getElementById('noteForm');
     const saveNoteBtn = document.getElementById('saveNote');
     const noteTitleInput = document.getElementById('noteTitle');
@@ -120,36 +116,36 @@ const btnNewNote = document.getElementById('btn-newza');
 
 
 
-
     // Находим кнопки по их идентификаторам
     const btnNotes = document.getElementById('btn-notes');
     const btnMatrix = document.getElementById('btn-matrix');
     const btnWeekPlan = document.getElementById('btn-week-plan');
     const btnSettings = document.getElementById('btn-settings');
     const btnExit = document.getElementById('btn-exit');
-    const btnvhod = document.getElementById('btn-vhod');
+    const btnInbox = document.getElementById('btn-inbox');
     // Добавляем обработчики событий для каждой кнопки
-    btnNotes.addEventListener('click', function() {
-      // Выполняем переход на страницу "Заметки"
-      window.location.href = '{% url "notes:note" %}';
-    });
-  
-    btnMatrix.addEventListener('click', function() {
-      // Выполняем переход на страницу "Матрица"
-      window.location.href = '{% url "tasks:matrix" %}';
-    });
-  
-    btnWeekPlan.addEventListener('click', function() {
-      // Выполняем переход на страницу "План недели"
-      window.location.href = '{% url "tasks:list_week" %}';
-    });
-    btnSettings.addEventListener('click', function() {
-      window.location.href = '{% url "main:settings" %}';
-    });
-    btnExit.addEventListener('click', function() {
-      window.location.href = 'file:///C:/Users/1/Desktop/вебприложение/registry.html';
-    });
     
+      btnMatrix.addEventListener('click', function() {
+        // Выполняем переход на страницу "Матрица"
+        window.location.href = '{% url "tasks:matrix" %}';
+      });
+    
+      btnWeekPlan.addEventListener('click', function() {
+        // Выполняем переход на страницу "План недели"
+        window.location.href = '{% url "tasks:list_week" %}';
+      });
+      btnSettings.addEventListener('click', function() {
+        window.location.href = '{% url "main:settings" %}';
+      });
+      btnExit.addEventListener('click', function() {
+        window.location.href = 'file:///C:/Users/1/Desktop/вебприложение/registry.html';
+      });
+      btnInbox.addEventListener('click', function() {
+  
+        window.location.href = '{% url "tasks:index" %}';
+      });
+
+
   </script>
 </body>
 </html>

@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>WCID - What can i do?</title>
+
+    <link rel="stylesheet" type="text/css" href={% static "css/matrica.css" %}>
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="sidebar">
+      <div class="wcid1">WCID</div>
+      <button type="submit" id="btn-exit" class="btn-exit">
+        <span class="btn-exit-text">Выйти</span>
+      </button>
+      <button type="submit" id="btn-settings" class="btn-settings button-pressed">
+        <span class="btn-settings-text-pressed">Настройки</span>
+      </button>
+      <button type="submit" id="btn-notes" class="btn-notes">
+        <span class="notes">Заметки</span>
+      </button>
+      <button type="submit" id="btn-matrix" class="btn-matrix">
+        <span class="matrix">Матрица</span>
+      </button>
+      <button type="submit"id="btn-week-plan" class="btn-week-plan">
+        <span class="week-plan">План недели</span>
+      </button>
+      <button type="submit" id="btn-inbox" class="btn-inbox">
+        <span class="inbox">Входящие</span>
+      </button>
+    </div>
+    <div class="top1">
+      <div class="nas">Выбери тему, которая будет вдохновлять</div>
+    </div>
+    <div class="footer">
+      <div class="nas">Становись лучше с WCID !</div>
+    </div>
+  </div>
+  <div class="top">
+    <div class="wcid">WCID</div>
+  </div>
+  <div class="task-tracker">Твой трекер задач</div>
+  <div class="tema-1">
+    <img src={% static "images/Тема 1.png" %} alt="Изображение" class="background-image">
+    <button type="submit" class="btn-tap" data-theme="theme1">
+      <span class="btn-tap-text">Выбрать</span>
+    </button>
+  </div>
+  <div class="tema-2">
+    <img src={% static "images/Тема 2.png" %} alt="Изображение" class="background-image">
+    <button type="submit" class="btn-tap" data-theme="theme2">
+      <span class="btn-tap-text">Выбрать</span>
+    </button>
+  </div>
+  <div class="tema-3">
+    <img src={% static "images/Тема 3.png" %} alt="Изображение" class="background-image">
+    <button type="submit" class="btn-tap" data-theme="theme3">
+      <span class="btn-tap-text">Выбрать</span>
+    </button>
+  </div>
+  <script>
+
+    const themeButtons = document.querySelectorAll('.btn-tap');
+    const mainContent = document.querySelector('.main-content');
+
+    themeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const theme = this.dataset.theme;
+        mainContent.className = 'main-content ' + theme;
+      });
+    });
+
+
+     // Находим кнопки по их идентификаторам
+     const btnNotes = document.getElementById('btn-notes');
+    const btnMatrix = document.getElementById('btn-matrix');
+    const btnWeekPlan = document.getElementById('btn-week-plan');
+    const btnSettings = document.getElementById('btn-settings');
+    const btnExit = document.getElementById('btn-exit');
+    const btnInbox = document.getElementById('btn-inbox');
+    // Добавляем обработчики событий для каждой кнопки
+    btnNotes.addEventListener('click', function() {
+      // Выполняем переход на страницу "Заметки"
+        window.location.href = {% url "notes:note" %};
+      });
+    
+      btnMatrix.addEventListener('click', function() {
+        // Выполняем переход на страницу "Матрица"
+        window.location.href = '{% url "tasks:matrix" %}';
+      });
+    
+      btnWeekPlan.addEventListener('click', function() {
+        // Выполняем переход на страницу "План недели"
+        window.location.href = '{% url "tasks:list_week" %}';
+      });
+      btnSettings.addEventListener('click', function() {
+        window.location.href = 'file:///C:/Users/1/Desktop/вебприложение/nastroiki.html';
+      });
+      btnExit.addEventListener('click', function() {
+        window.location.href = 'file:///C:/Users/1/Desktop/вебприложение/registry.html';
+      });
+      btnInbox.addEventListener('click', function() {
+  
+        window.location.href = '{% url "tasks:index" %}';
+      });
+  </script>
+</body>
+</html>

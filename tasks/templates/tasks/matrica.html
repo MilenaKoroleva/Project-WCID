@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>WCID - What can i do?</title>
+
+    <link rel="stylesheet" type="text/css" href={% static "css/matrica.css" %}>
+
+
+    
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="sidebar">
+      <div class="wcid1">WCID</div>
+      <button type="submit" id="btn-exit" class="btn-exit">
+        <span class="btn-exit-text">Выйти</span>
+      </button>
+      <button type="submit" id="btn-settings" class="btn-settings">
+        <span class="btn-settings-text">Настройки</span>
+      </button>
+      <button type="submit" id="btn-notes" class="btn-notes">
+        <span class="notes">Заметки</span>
+      </button>
+      <button type="submit" id="btn-matrix" class="btn-matrix button-pressed">
+        <span class="matrix-pressed">Матрица</span>
+      </button>
+      <button type="submit" id="btn-week-plan" class="btn-week-plan">
+        <span class="week-plan">План недели</span>
+      </button>
+      <button type="submit" id="btn-inbox" class="btn-inbox">
+        <span class="inbox">Входящие</span>
+      </button>
+    </div>
+  </div>
+  <div class="top">
+    <div class="wcid">WCID</div>
+  </div>
+  <div class="task-tracker">Твой трекер задач</div>
+
+  <ul class="todo-list">
+    <span class="texti3">Важно и срочно</span>
+    <li class="todo-item">
+        <input type="checkbox" class="todo-checkbox">
+        <input type="text" class="todo-input">
+    </li>
+</ul>
+<ul class="todo-list2">
+  <span class="texti">Срочно, но менее важно</span>
+  <li class="todo-item">
+      <input type="checkbox" class="todo-checkbox">
+      <input type="text" class="todo-input">
+  </li>
+</ul>
+<ul class="todo-list3">
+  <span class="texti">Важно, но менее срочно</span>
+  <li class="todo-item">
+      <input type="checkbox" class="todo-checkbox">
+      <input type="text" class="todo-input">
+  </li>
+</ul>
+<ul class="todo-list4">
+  <span class="texti2">Менее важно и менее срочно</span>
+<li class="todo-item">
+    <input type="checkbox" class="todo-checkbox">
+    <input type="text" class="todo-input">
+</li>
+</ul>
+ <script>
+       
+         // Находим кнопки по их идентификаторам
+    const btnNotes = document.getElementById('btn-notes');
+    const btnMatrix = document.getElementById('btn-matrix');
+    const btnWeekPlan = document.getElementById('btn-week-plan');
+    const btnSettings = document.getElementById('btn-settings');
+    const btnExit = document.getElementById('btn-exit');
+    const btnInbox = document.getElementById('btn-inbox');
+    // Добавляем обработчики событий для каждой кнопки
+    btnNotes.addEventListener('click', function() {
+      // Выполняем переход на страницу "Заметки"
+      window.location.href = '{% url "notes:note" %}';
+    });
+  
+    btnWeekPlan.addEventListener('click', function() {
+      // Выполняем переход на страницу "План недели"
+      window.location.href = '{% url "tasks:list_week" %}';
+    });
+    btnSettings.addEventListener('click', function() {
+  
+      window.location.href = '{% url "main:settings" %}';
+    });
+
+    btnExit.addEventListener('click', function() {
+      window.location.href = 'file:///C:/Users/1/Desktop/вебприложение/registry.html';
+    });
+
+    btnInbox.addEventListener('click', function() {
+  
+  window.location.href = '{% url "tasks:index" %}';
+});
+    </script>
+
+</body>
+</html>
