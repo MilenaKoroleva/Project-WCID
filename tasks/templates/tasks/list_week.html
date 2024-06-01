@@ -41,83 +41,118 @@
     <div class="wcid">WCID</div>
   </div>
   <div class="task-tracker">Твой трекер задач</div>
-  <div class="new-rectangle"></div>
+  <div class="new-rectangle"> </div>
   <div class="new-rectangle1">
-    <span class="ptext">Пн</span>
+    <span class="ptext">Пн </span>
   </div>
   <div class="new-rectangle-1">
+    <span class="ptext">{{current_date1}}</span>
   </div>
     <ul class="rectangle-m">
-      <li class="todo-item">
-          <input type="checkbox" class="todo-checkbox">
-          <input type="text" class="todo-input">
-      </li>
+      {% for note in todos_filtered1 %}
+    <li class="todo-item">
+      <div class="todo-input">
+        <input type="checkbox" class="todo-checkbox">
+        {{note.titel}}
+      </div>
+    </li>
+    {% endfor%}
   </ul>
 <div class="new-rectangle2">
   <span class="ptext">Вт</span>
 </div>
 <div class="new-rectangle-2">
+  <span class="ptext">{{current_date2}}</span>
 </div>
     <ul class="rectangle-t" >
-      <li class="todo-item">
-          <input type="checkbox" class="todo-checkbox">
-          <input type="text" class="todo-input">
-      </li>
+      {% for note in todos_filtered2 %}
+    <li class="todo-item">
+      <div class="todo-input">
+        <input type="checkbox" class="todo-checkbox">
+        {{note.titel}}
+      </div>
+    </li>
+    {% endfor%}
   </ul>
   <div class="new-rectangle3">
     <span class="ptext">Ср</span>
   </div>
   <div class="new-rectangle-3">
+    <span class="ptext">{{current_date3}}</span>
   </div>
     <ul class="rectangle-w">
-      <li class="todo-item">
-          <input type="checkbox" class="todo-checkbox">
-          <input type="text" class="todo-input">
-      </li>
+      {% for note in todos_filtered3 %}
+    <li class="todo-item">
+      <div class="todo-input">
+        <input type="checkbox" class="todo-checkbox">
+        {{note.titel}}
+      </div>
+    </li>
+    {% endfor%}
   </ul>
   <div class="new-rectangle4">
     <span class="ptext">Чт</span>
   </div>
   <div class="new-rectangle-4">
+    <span class="ptext">{{current_date4}}</span>
   </div>
     <ul class="rectangle-th">
-      <li class="todo-item">
-          <input type="checkbox" class="todo-checkbox">
-          <input type="text" class="todo-input">
-      </li>
+      {% for note in todos_filtered4 %}
+    <li class="todo-item">
+      <div class="todo-input">
+        <input type="checkbox" class="todo-checkbox">
+        {{note.titel}}
+      </div>
+    </li>
+    {% endfor%}
   </ul>
   <div class="new-rectangle5">
     <span class="ptext">Пт</span>
   </div>
   <div class="new-rectangle-5">
+    <span class="ptext">{{current_date5}}</span>
   </div>
     <ul class="rectangle-f" >
-      <li class="todo-item">
-          <input type="checkbox" class="todo-checkbox">
-          <input type="text" class="todo-input">
-      </li>
+      {% for note in todos_filtered5 %}
+    <li class="todo-item">
+      <div class="todo-input">
+        <input type="checkbox" class="todo-checkbox">
+        {{note.titel}}
+      </div>
+    </li>
+    {% endfor%}
   </ul>
   <div class="new-rectangle6">
     <span class="ptext">Сб</span>
   </div>
   <div class="new-rectangle-6">
+    <span class="ptext">{{current_date6}}</span>
   </div>
     <ul class="rectangle-sat">
-      <li class="todo-item">
-          <input type="checkbox" class="todo-checkbox">
-          <input type="text" class="todo-input">
-      </li>
+      {% for note in todos_filtered6 %}
+    <li class="todo-item">
+      <div class="todo-input">
+        <input type="checkbox" class="todo-checkbox">
+        {{note.titel}}
+      </div>
+    </li>
+    {% endfor%}
   </ul>
   <div class="new-rectangle7">
     <span class="ptext">Вс</span>
   </div>
   <div class="new-rectangle-7">
+    <span class="ptext">{{current_date7}}</span>
   </div>
        <ul class="rectangle-sun">
-      <li class="todo-item">
-          <input type="checkbox" class="todo-checkbox">
-          <input type="text" class="todo-input">
-      </li>
+        {% for note in todos_filtered7 %}
+        <li class="todo-item">
+          <div class="todo-input">
+            <input type="checkbox" class="todo-checkbox">
+            {{note.titel}}
+          </div>
+        </li>
+        {% endfor%}
   </ul>
 </div>
 

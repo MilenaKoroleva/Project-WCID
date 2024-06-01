@@ -47,31 +47,49 @@
 
   <ul class="todo-list">
     <span class="texti3">Важно и срочно</span>
+    {% for note in cont1 %}
     <li class="todo-item">
+      <div class="todo-input">
         <input type="checkbox" class="todo-checkbox">
-        <input type="text" class="todo-input">
+        {{note.titel}}
+      </div>
     </li>
+    {% endfor%}
 </ul>
 <ul class="todo-list2">
   <span class="texti">Срочно, но менее важно</span>
-  <li class="todo-item">
-      <input type="checkbox" class="todo-checkbox">
-      <input type="text" class="todo-input">
-  </li>
+  {% for note in cont3 %}
+    <li class="todo-item">
+      <div class="todo-input">
+        <input type="checkbox" class="todo-checkbox">
+        {{note.titel}}
+      </div>
+    </li>
+    {% endfor%}
 </ul>
 <ul class="todo-list3">
   <span class="texti">Важно, но менее срочно</span>
-  <li class="todo-item">
-      <input type="checkbox" class="todo-checkbox">
-      <input type="text" class="todo-input">
-  </li>
+  {% for note in cont2 %}
+    <li class="todo-item">
+      <div class="todo-input">
+        <input type="checkbox" class="todo-checkbox">
+        {{note.titel}}
+      </div>
+    </li>
+    {% endfor%}
 </ul>
 <ul class="todo-list4">
   <span class="texti2">Менее важно и менее срочно</span>
-<li class="todo-item">
-    <input type="checkbox" class="todo-checkbox">
-    <input type="text" class="todo-input">
-</li>
+     
+    {% for note in cont4 %}
+    <li class="todo-item">
+      <div class="todo-input">
+        <input type="checkbox" class="todo-checkbox">
+        {{note.titel}}
+      </div>
+    </li>
+    {% endfor%}
+
 </ul>
  <script>
        

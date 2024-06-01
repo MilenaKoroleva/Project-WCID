@@ -14,15 +14,15 @@
   padding: 10px 20px;
   position: absolute;
   background-color: #FFF1D4;
-  top:35vh;
-  left:70vw;
-  width:10vw;
-  height:10vh;
+  top:55vh;
+  left:65vw;
+  width:7vw;
+  height:3vh;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   color: #333;
-  text-align: center;
+
   text-decoration: none;
   cursor: pointer;
 }
@@ -32,15 +32,15 @@
   padding: 10px 20px;
   position: absolute;
   background-color:  #CEF0BE;
-  top:35vh;
-  left:82vw;
-  width:10vw;
-  height:10vh;
+  top:55vh;
+  left:80vw;
+  width:7vw;
+  height:3vh;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   color: #333;
-  text-align: center;
+
   text-decoration: none;
   cursor: pointer;
 }
@@ -49,27 +49,26 @@
   padding: 10px 20px;
   position: absolute;
   background-color:#8FA890;
-  top:47vh;
-  left:70vw;
-  width:10vw;
-  height:10vh;
+  top:75vh;
+  left:65vw;
+  width:22vw;
+  height:5vh;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   color: #333;
-  text-align: center;
   text-decoration: none;
-  cursor: pointer;
+  text-align: center;
 }
 
 .button4 {
   padding: 10px 20px;
   position: absolute;
   background-color: #DBC9B4;
-  top:47vh;
-  left:82vw;
-  width:10vw;
-  height:10vh;
+  top:90vh;
+  left:65vw;
+  width:22vw;
+  height:5vh;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -486,10 +485,10 @@
     display: none;
     position: fixed;
     z-index: 1;
-    left: 35vw;
+    left: 65vw;
     top: 10vw;
-    width: 25vw;
-    height: 90vh;
+    width: 30vw;
+    height: 150vh;
     overflow: auto;
     padding: 20vh;
   }
@@ -498,7 +497,7 @@
     padding: 20px;
     border: 1px solid #888;
     width: 20vw;
-    height: 50vh;
+    height: 40vh;
   }
   .close {
     color: #aaa;
@@ -667,7 +666,7 @@
       position: center;
       left: 5vw;
       width: 20vw; /* Ширина прямоугольника в процентах */
-      height: 35vh; /* Высота прямоугольника в viewport units */
+      height: 20vh; /* Высота прямоугольника в viewport units */
       background: #f5f3f1;
       margin: 2vh auto; /* Отступы сверху и снизу, автоматическое выравнивание по горизонтали */
     }
@@ -735,6 +734,21 @@
       font-style: normal;
  
       font-size: 1.5vw;
+      line-height: 20px;
+      text-align: center;
+      color: black;
+    }
+
+    .ptext5 {
+      position: absolute;
+      left: 5%;
+      right: 31.25%;
+      top: 33%;
+      bottom: 25%;
+      font-family: 'Montserrat';
+      font-style: normal;
+ 
+      font-size: 1.15vw;
       line-height: 20px;
       text-align: center;
       color: black;
@@ -1077,6 +1091,17 @@
   margin-left: 10px;
   transform: scale(1.5);
   padding: 2px;
+}
+
+.todo-input1 {
+  margin-right: 10px;
+  width: 90%;
+  height: 50%;
+
+  border: none;
+  border-bottom: 2px solid #000;
+  background: transparent;
+  font-size: 1.5vw;
 }
 
 .todo-input {

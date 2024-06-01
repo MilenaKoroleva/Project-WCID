@@ -2,8 +2,12 @@ from urllib import response
 from django.http import HttpResponse
 from django.shortcuts import render
 
-import notes
+from notes.models import Note
 
 def note(request):
-    return render(request, 'index.html')
+    task_list=Note.objects.all()
+    context={
+        "notes": task_list,
+    }
+    return render(request, 'index.html', context)
 

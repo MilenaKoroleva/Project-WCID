@@ -60,7 +60,13 @@
   </div>
 <div class = rectangle>
   <div class = rectangle1>
-  <div id="notesContainer"></div>
+  <div id="notesContainer">
+    {% for note in notes %}
+        <div class = "note">
+          {{note.titel}}
+        </div>
+      {% endfor%}
+  </div>
 </div>
 </div>
   <script>
