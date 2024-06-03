@@ -24,5 +24,6 @@ app_name="notes"
 
 urlpatterns = [
     path('notes/', views.note, name='note'),
+    path('save_note/', views.save_note, name='save_note'),
 
 ]

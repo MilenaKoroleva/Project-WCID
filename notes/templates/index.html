@@ -51,13 +51,20 @@
   <div id="noteForm" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <button type="submit" id="saveNote" class="got">
-        <span class="gottext">Готово</span>
-      </button>
-      <div><input type="text" id="noteTitle" class = "pole1" placeholder="Название"></div>
-      <div></div><textarea id="noteText"  class = "pole2" placeholder="Текст"></textarea></div>
+      <form id="noteForm" method="post" action='{% url "notes:save_note" %}'>
+        {% csrf_token %}
+        <button type="submit" id="saveNote" class="got">
+          <span class="gottext">Готово</span>
+        </button>
+        <div><input type="text" id="noteTitle" class = "pole1" placeholder="Название" name="titel" required></div>
+        <div></div><textarea id="noteText"  class = "pole2" placeholder="Текст" name="description" required>
+        </textarea></div>
+      </form>
     </div>
   </div>
+
+    
+  
 <div class = rectangle>
   <div class = rectangle1>
   <div id="notesContainer">
@@ -72,11 +79,12 @@
   <script>
 const btnNewNote = document.getElementById('btn-new');
     const noteForm = document.getElementById('noteForm');
-    const saveNoteBtn = document.getElementById('saveNote');
+    const saveNoteBtn = document.querySelector('#noteForm button[type="submit"]');
     const noteTitleInput = document.getElementById('noteTitle');
     const noteTextInput = document.getElementById('noteText');
     const notesContainer = document.getElementById('notesContainer');
 
+    
     btnNewNote.addEventListener('click', function() {
       noteForm.style.display = 'block';
     });
@@ -97,13 +105,15 @@ const btnNewNote = document.getElementById('btn-new');
     saveNoteBtn.addEventListener('click', function(event) {
       event.preventDefault();
 
-      const noteTitle = noteTitleInput.value;
-      const noteText = noteTextInput.value;
+      const noteTitle = document.getElementById('noteTitle').value;
+      const noteText = document.getElementById('noteText').value;
+    
 
       if (noteTitle.trim() === '' ) {
         alert('Пожалуйста, заполните заголовок заметки.');
         return;
       }
+      
 
       const noteElement = document.createElement('div');
       noteElement.classList.add('note');
@@ -114,10 +124,10 @@ const btnNewNote = document.getElementById('btn-new');
       noteElement.addEventListener('click', function() {
         alert(noteTitle + '\n\n' + noteText);
       });
-
       noteTitleInput.value = '';
       noteTextInput.value = '';
       noteForm.style.display = 'none';
+      document.getElementById('noteForm').submit();
     });
 
 
